@@ -1,0 +1,77 @@
+section{
+	width: 70vw;
+	height: 60vh;
+	color: white;
+	font-family: ala;
+	font-size: 100%;
+	position: absolute;
+	top: 30vh;
+	left: 15vw;
+	background-image: url(../images/korek2.png);
+	background-repeat: repeat;
+	background-attachment: local;
+  	padding: 10px;
+ 	border: 10px solid transparent;
+  	border-image: url(../images/border.png);
+  	border-image-slice: 30;
+  	border-image-repeat: stretch;
+  	border-image-width: 15px;
+  	border-image-outset: 5px;
+  	overflow: auto;
+}
+
+ .photo{
+ 
+	width: 12vw;
+  	height: auto;
+   	border-style: solid;
+  	border-color: white;
+  	border-width: 5px;
+
+  	margin-bottom: 0px;
+  	padding: 0px;
+}
+
+ #pin {
+ 	position: top;
+ 	padding-left: 7vw;
+ 	display: block;
+}
+
+.photo:hover {
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+} 
+
+.nagroda{
+
+	padding: 0px;
+	margin: 3vw;
+  	margin-top: 3vh;
+  	margin-bottom: 1vw;
+}
+
+
+#nagrody{
+display: flex;
+width: 68vw;
+justify-content: center;
+flex-wrap: wrap;
+
+
+}
+
+.signature {
+	position: relative;
+	width: 100%;
+	display: block:;
+	text-align: center;
+	margin-top: 0;
+	padding-top: 0;
+	background-color: white;
+	background-size: cover;
+	color: black;
+	line-height: 2;
+
+  }
+
+

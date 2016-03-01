@@ -1,0 +1,39 @@
+{% extends "index.html" %}
+{% block css %}
+	{% load staticfiles %} 
+	<link rel="stylesheet" href="{% static "css/kontakt.css" %}" />
+{%endblock%}
+
+{% block main_content %}
+
+<section id="form">
+
+<h1>Napisz do nas</h1>
+<form role="form" action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button id="submit" type="submit">Wyślij</button>
+</form>
+
+</section>
+
+
+<section id="info">
+
+<p>manfredijohnsonband@gmail.com</p>
+
+<p>Mieszko "Manfredi" Służewski<br>
+e-mail: mieszkosluzewski@gmail.com<br>
+tel. 661 102 343
+</p>
+
+<p>
+Piotr "Johnson" Kozub<br>
+e-mail: piotrkozub93@wp.pl<br>
+tel.511 560 337
+</p>
+
+</section>
+
+
+{%endblock%}

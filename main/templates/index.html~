@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+ <html lang="pl-PL">
+
+<html>
+
+<head>
+  		<title>Manfredi and Johnson</title>
+      <link rel="icon" type="image/png" href="icon.png">
+    
+      <meta charset="UTF-8">
+  		<meta name="viewport" content="width=device-width">
+  		<link rel="stylesheet" href="styleg.css">
+
+<style>
+
+@font-face {
+    font-family: jon;
+    src: url(JonSans.ttf);
+}
+@font-face {
+    font-family: ala;
+    src: url(alamakot.ttf);
+}
+
+body{
+	background-image: url("tło.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100vh;
+	padding:0px;
+	margin:0px;
+}
+
+a:link,a:visited, a:active  {color:white; background-color:transparent; text-decoration:none}
+a:hover   {color:black; background-color:transparent; text-decoration:none}
+
+
+header {
+	background-color: white;
+	margin: 0px;
+	padding: 4px;
+	text-align: center;
+}
+
+nav {
+	background-image: url("pasek.png");
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	padding: 2px;
+	text-align: right;
+	font-family: ala;
+
+	font-size: 120%;
+	word-spacing: 30px;
+  padding-right: 30px;
+}
+
+ul#menu {
+    padding: 0;
+}
+
+ul#menu li {
+	display:inline;
+    background-color: black;
+    color: white;
+    padding: 8px 8px;
+    text-decoration: none;
+    border-radius: 6px 6px 6px 6px;
+}
+
+ul#menu li:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+
+
+
+section{
+	width: 80vw;
+	color: white;
+	font-family: Oswald;
+	font-size: 100%;
+	position:relative;
+	top:50px;
+	margin:auto;
+	margin-bottom: 100px;
+	text-align: justify;
+	background-color: rgba(0,0,0,0.8);
+  	padding: 10px;
+ 	border: 10px solid transparent;
+  	border-image: url(border.png);
+  	border-image-slice: 30;
+  	border-image-repeat: stretch;
+  	border-image-width: 15px;
+  	border-image-outset: 5px;
+}
+
+footer {
+	text-align: left;
+	padding-left: 20px;
+	font-family: jon;
+	color: white;
+	background-color: rgba(0,0,0,0.8);
+	position: absolute;
+  	bottom: 0;
+  	display: none;
+}
+
+#social1, #social2 {
+	
+    position: absolute;
+    right:0;
+    top:30vh;
+    background-color: rgba(0,0,0,0.8);
+    background-size: 100px 50px;
+    top-margin: 400px;
+    box-shadow: 2px 2px rgba(255,255,255,0.2);
+    border-radius: 8px 0px 0px 8px;
+ 	position: fixed;
+}
+
+
+#social2{top: 40vh;}
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+	<header>
+		 <a href="index.html"> <img src="logoflat.png" alt="mj_logo' " width="678" height="100" ></a> 
+       
+	</header>
+
+	<nav>
+		<ul id="menu">
+      <div class="dropdown">
+        <li class="dropbtn">INFO</li>
+          <div class="dropdown-content1">
+            <a href="#">BIO</a>
+          </div>
+          <div class="dropdown-content2">
+            <a href="#">GLORY HALL</a>
+          </div>
+      </div>
+        
+        <li>KONCERTY</li>
+  			<li>GALERIA</li>
+  			<li>MEDIA</li>
+  			<li>PRZYJACIELE</a></li>
+        <li>GUESTBOOK</li>
+  			<li>KONTAKT</li>
+		</ul> 
+	</nav>
+
+<section>
+<hr>
+{% for entry in news %}
+    <h3>{{ entry.title }}</h3>
+    {{ entry.text|safe }}<br />
+    {{ entry.posted_date|date:"Y.m.d H:i" }} <hr>
+{% endfor  %}
+
+<section>
+	
+
+ 
+
+ 
+
+ <div id="social" >
+
+     <a href="https://www.facebook.com/johnsonandmanfredi/?fref=ts" id="social1" target="blank">
+      <img src="fb.png" width="50" height="50" ></a>
+      <a href="https://www.youtube.com/channel/UCZa10a5mrg0sR_xKi0VZxNg" id="social2"target="blank">
+      <img src="yt.png" width="50" height="50" ></a>
+  </div> 
+
+  <footer>
+    Copyright © 2015 Manfredi &amp; Johnson - Oficjalna strona zespołu | Admin:
+  </footer>
+
+</body>
+
+</html>
+
+ 

@@ -1,0 +1,36 @@
+{% extends "index.html" %}
+{% block css %}
+	{% load staticfiles %} 
+	<link rel="stylesheet" href="{% static "css/media.css" %}" />
+{%endblock%}
+
+{% block main_content %}
+
+<section>
+
+<div class="video">
+<p>Pukanie do mych drzwi.</p>
+<iframe src="https://www.youtube.com/embed/-xmnwY0ax68?autoplay=0" allowfullscreen>
+</iframe>
+</div>
+
+<div class="video">
+<p>Snowflakes and Horses.</p>
+<iframe src="https://www.youtube.com/embed/dD1tIuJvApc?autoplay=0" allowfullscreen>
+</iframe>
+</div>
+
+<div class="video">
+<p>Nie mieć nic.</p>
+<iframe src="https://www.youtube.com/embed/7YRXvhVWmIk?autoplay=0" allowfullscreen>
+</iframe>
+</div>
+
+<div class="video">
+<p>You gotta be dreamin.</p>
+<iframe src="https://www.youtube.com/embed/yEHZuNkxhP8?autoplay=0" allowfullscreen>
+</iframe>
+</div>
+
+</section>
+{%endblock%}

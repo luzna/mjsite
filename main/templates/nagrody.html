@@ -1,0 +1,59 @@
+{% extends "index.html" %}
+{% block css %}
+	{% load staticfiles %} 
+	<link rel="stylesheet" href="{% static "css/nagrody.css" %}" />
+{%endblock%}
+
+{% block main_content %}
+
+<section>
+
+<div id="nagrody">
+	
+	<div class="nagroda">
+		<img src="{% static "images/pin.png" %}" id="pin"/>
+		<img class="photo" src="{% static "images/nagrody/imielin.jpg" %}">
+		<p class="signature">I miejsce. <br> Imielin 2015.</p>
+	</div>
+
+	<div class="nagroda">
+		<img src="{% static "images/pin.png" %}" id="pin"/>
+		<img class="photo" src="{% static "images/nagrody/imielin.jpg" %}">
+		<p class="signature">I miejsce. <br> Imielin 2015.</p>
+	</div>
+
+	<div class="nagroda">
+		<img src="{% static "images/pin.png" %}" id="pin"/>
+		<img class="photo" src="{% static "images/nagrody/imielin.jpg" %}">
+		<p class="signature">I miejsce. <br> Imielin 2015.</p>
+	</div>
+
+
+</div>
+
+
+	
+</section>
+
+
+
+
+
+
+<!--
+<section>
+
+<div id="nagrody">
+	
+		<div class="nagroda">
+	
+		<img src="{% static "images/pin.png" %}" id="pin"/>
+		<img class="gallerymain" src="{% static "images/nagrody/imielin.jpg" %}">
+		<p class="signature">Lubliniec 2015</p>
+		
+		</div>
+</div>
+
+</section> -->
+
+{%endblock%}

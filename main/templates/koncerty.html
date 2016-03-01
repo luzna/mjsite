@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+{% block css %}
+	{% load staticfiles %} 
+	<link rel="stylesheet" href="{% static "css/koncerty.css" %}" />
+{%endblock%}
+
+{% block main_content %}
+
+{% load staticfiles %}
+   	 <img src="{% static "images/nixi3.png" %}" alt="zegar" id="watch"/>
+
+<section>
+ 	 
+<h2>GRAFIK KONCERTÓW</h2>
+
+{%for concert in concerts %}
+
+<h3>{{concert.place}} - {{ concert.date_time|date:"d.m.Y" }} - godz: {{ concert.date_time|date:"H:i" }}</h3>
+<hr>
+<p>Wstęp: {{concert.price}} zł</p>
+<p id="content"> {{concert.content|safe}} </p>
+{% endfor  %} 
+
+</section>
+{%endblock%}
+

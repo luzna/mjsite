@@ -1,0 +1,38 @@
+section {
+	display: flex;
+	width: 90vw;
+	left: 5vw;
+
+
+	flex-wrap: wrap;
+}
+
+.video {
+	background-color: rgba(0,0,0,0.8);
+ 	border: 10px solid transparent;
+  	border-image: url(../images/border.png);
+  	border-image-slice: 30;
+  	border-image-repeat: stretch;
+  	border-image-width: 15px;
+  	border-image-outset: 5px;
+  	margin-left: 5vw;
+	margin-bottom: 5vh;
+	margin-top: 5vh;
+}
+
+iframe{
+
+  	width: 30vw;
+	height: 40vh;
+
+	
+
+}
+
+p {
+	color: white;
+	position: top;
+	font-family: ala;
+	font-size: 150%;
+	text-align: center;
+}

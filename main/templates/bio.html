@@ -1,0 +1,34 @@
+{% extends "index.html" %}
+{% block css %}
+	{% load staticfiles %} 
+	<link rel="stylesheet" href="{% static "css/bio.css" %}" />
+{%endblock%}
+
+{% block main_content %}
+
+<section>
+    <h1>O nas.</h1>
+    <p>
+      
+      Manfredi &amp; Johnson to niecodzienne połączenie brudnego bluesa z Delty oraz nowatorskiego spojrzenia na dźwięki. Niepowtarzalna energia na&nbsp;koncertach, oryginalne kompozycje nie pozbawione twórczych improwizacji. Aranżacje zaskakujące publiczność oraz samych twórców.
+      <br>Zepół tworzy dwóch młodych, jednak niezwykle doświadczonych muzyków. Poznali się podczas jam session po Rawie Blues w 2011 roku. Żaden z nich tego spotkania dokładnie nie pamięta. W 2014 roku ich drogi zeszły się po raz drugi. Od tego czasu tworzą i grają nieprzerwanie do dziś.<br>
+      Mają na swoim koncie kilkadziesiąt koncertów oraz liczne osiągnięcia (zobacz: <a href='/nagrody'>Nagrody</a>).
+      
+      <br>Aktualnie zespół przygotowuje się do trasy koncertowej w kraju i poza jego granicami. Równolegle trwają prace nad debiutanckim albumem.<br><br>
+
+       <img src="{% static "images/bio.png" %}" id="foto">
+
+      <p>Mieszko “Manfredi” Służewski – Missisipi saxophones, shaker.<br>
+      Zwycięzca międzynarodowego konkursu „Harmonica Bridge 2011”.</p>
+
+      
+      
+      <p>Piotr “Johnson” Kozub – gitara akustyczna, wokal, stompbox i inne tupaje.<br>
+      Najlepszy gitarzysta akustyczny Bluesroads 2015.</p>
+
+
+      Muzykę którą grają określają mianem “Percussive Blues”. Jest to rytmiczne połączenie bluesa i funky z elementami jazzu. Nie stronią od wolnych improwizacji. W ich repertuarze można znaleźć utwory autorskie jak&nbsp;i&nbsp;„kradzione”. 
+    
+    </p>  
+  </section>
+{%endblock%}
